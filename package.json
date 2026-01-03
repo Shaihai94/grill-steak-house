@@ -1,0 +1,15 @@
+{
+  "name": "grillsteakhouse",
+  "version": "1.0.0",
+  "description": "'steak house restaurant'",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shai",
+  "license": "ISC"
+}
