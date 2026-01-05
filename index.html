@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS (styling framework for layout and components) -->
+     <!-- added style.css -->
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <title>Shai's Grill Steak House</title>
+    <!-- I started out with the navbar knowing that I need to have two sepearte pages -->
+    <title>Grill Steak House</title>
   </head>
   <body>
+    <!-- This is where i started working on the navigation bar section -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navba</a>
+        <!-- I made sure that the Restaurant brand/logo link goes back to home page -->
+        <a class="navbar-brand" href="/index.html">Grilled Steak House</a>
+        <!-- Hamburger button for mobile navigation -->
         <button
           class="navbar-toggler"
           type="button"
@@ -24,50 +31,38 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Collapsible nav links (shows on larger screens, collapses on small screens) -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Menu page link -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/menu.html"
+                >Menu</a>
             </li>
+            <!-- Contact page link -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link active" href="/contact.html">Contact</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
+    <!-- Added a hero image and text to the front page made sure text and image are centered and are collapasable when page becomes small -->
+    <div class="hero-section text-center">
+      <div class="hero-text text-center">
+        <!-- added a parapgraph decription -->
+        <h1>Where Steaks Are Cooked To Perfection</h1>
+        <!-- wraped the text in a container to align the contant in the center -->
+        <p class="container">
+          A steakhouse is a restaurant focused on high-quality beef cuts (like
+          ribeye, filet mignon, Tomahawk) cooked expertly, featuring an upscale
+          ambiance, rich sides (creamed spinach, potatoes), extensive wine lists
+          (especially reds), and attentive service, creating a luxurious dining
+          experience often for special occasions, sometimes with classic dark
+          wood decor, or a modern twist with broader menus.
+        </p>
+      </div>
+      <img src="/images/Herooo.jpg" alt="Hero Image" class="hero-image" />
+    </div>
   </body>
 </html>

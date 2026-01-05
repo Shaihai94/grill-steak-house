@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!-- Bootstrap CSS (styling framework for layout and components) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Menu</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Grilled Steak House</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/menu.html"
+                    >Menu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- started with a container so the menu is centered in the middle of the page -->
+      <div class="container text-center">
+        <h1 class="text-center">Menu</h1>
+        <br />
+        <!-- added a class table and made sure it is bordered that way i can seperate all the contant that will be in the menu -->
+        <table class="table table-bordered">
+          <thead>
+            <!-- Menu table 4 columns: Appetizer, Salad, Entrees, Drink -->
+            <tr>
+              <th class="col">Appetizer</th>
+              <th class="col">Salad</th>
+              <th class="col">Entrees</th>
+              <th class="col">Drink</th>
+            </tr>
+          </thead>
+          <!-- The table body holds the items and images -->
+          <tbody>
+            <!-- This is Row 1-->
+            <tr>
+              <td
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                Cocktail Shrimp
+                <img
+                  src="images/images.png"
+                  class="img-thumbnail col"
+                  alt="Shrimp Cocktail"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td>
+                Greek Salad
+                <img
+                  src="images/Greek.png"
+                  class="img-thumbnail col"
+                  alt="Greek"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td>
+                Rib Eye Steak
+                <img
+                  src="images/RibEye.png"
+                  class="img-thumbnail col"
+                  alt="RibEye"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                Soft Drink
+                <img
+                  src="images/Soft Drink.png"
+                  class="img-thumbnail col"
+                  alt="Soft Drink"
+                  width="200"
+                  height="200"
+                />
+              </td>
+            </tr>
+
+            <!-- This is Row 2 -->
+            <tr>
+              <td
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                French Fries
+                <img
+                  src="images/french fries.png"
+                  class="img-thumbnail col"
+                  alt="Fremch Fries"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td>
+                South West Salad
+                <img
+                  src="images/South.png"
+                  class="img-thumbnail col"
+                  alt="South West Salad"
+                  width="200"
+                  height="200"
+                />
+              </td>
+
+              <!-- I had an issue where the image of Filet Mignon was exiting so i added flex-md-row so the image arrange itself -->
+              <td
+                class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2"
+              >
+                Filet Mignon
+                <img
+                  src="images/FiletMignon.png"
+                  class="img-thumbnail col"
+                  alt="Filet Mignon"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td>
+                Cocktails
+                <img
+                  src="images/Cocktails.png"
+                  class="img-thumbnail col"
+                  alt="Cocktail"
+                  width="200"
+                  height="200"
+                />
+              </td>
+            </tr>
+
+            <!-- This is Row 3 -->
+            <tr>
+              <td
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                Oysters
+                <img
+                  src="images/oysrters.png"
+                  class="img-thumbnail col"
+                  alt="Oysrters"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td>
+                Mediterranean Salad
+                <img
+                  src="images/Mediterranean.png"
+                  class="img-thumbnail col"
+                  alt="Mediterranean"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td>
+                Tomahawk Steak
+                <img
+                  src="images/Tomahack.png"
+                  class="img-thumbnail col"
+                  alt="Tomahawk"
+                  width="200"
+                  height="200"
+                />
+              </td>
+              <td>
+                Mocktails
+                <img
+                  src="images/Mocktails.png"
+                  class="img-thumbnail col"
+                  alt="Mocktail"
+                  width="200"
+                  height="200"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
